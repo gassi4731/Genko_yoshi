@@ -13,9 +13,11 @@ class ViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
     
-    var sampleArray = [String](repeating: "あ", count: 104);
+    var sampleArray = [String](repeating: "あ", count: 300);
     
     override func viewDidLoad() {
+        let genkoYoshiManager = GenkoYoshiManager(collectionView: collectionView, content: "こんにちは。")
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -32,7 +34,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         collectionView.reloadData()
         collectionView.layoutIfNeeded()
-        collectionView.scrollToItem(at: IndexPath(item: sampleArray.count - 20, section: 0), at: .centeredHorizontally, animated: false)
+        collectionView.scrollToItem(at: IndexPath(item: sampleArray.count - 10, section: 0), at: .centeredHorizontally, animated: false)
     }
 }
 
@@ -51,6 +53,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     //セルのサイズ(CGSize)
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 40, height: 40)
+        return CGSize(width: 40, height: 42)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }

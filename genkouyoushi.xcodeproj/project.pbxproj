@@ -15,6 +15,7 @@
 		753717162733F21A005FFC01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753717142733F21A005FFC01 /* LaunchScreen.storyboard */; };
 		7537171E2733F5DA005FFC01 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7537171D2733F5DA005FFC01 /* CollectionViewCell.swift */; };
 		753717212733FD95005FFC01 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753717202733FD95005FFC01 /* CollectionViewLayout.swift */; };
+		757F207927341DC300E63D7E /* GenkoYoshiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757F207827341DC300E63D7E /* GenkoYoshiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		753717172733F21A005FFC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7537171D2733F5DA005FFC01 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		753717202733FD95005FFC01 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
+		757F207827341DC300E63D7E /* GenkoYoshiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenkoYoshiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		753717082733F218005FFC01 /* genkouyoushi */ = {
 			isa = PBXGroup;
 			children = (
+				757F207827341DC300E63D7E /* GenkoYoshiManager.swift */,
 				7537171F2733FD83005FFC01 /* style */,
 				753717092733F218005FFC01 /* AppDelegate.swift */,
 				7537170B2733F218005FFC01 /* SceneDelegate.swift */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7537170E2733F218005FFC01 /* ViewController.swift in Sources */,
+				757F207927341DC300E63D7E /* GenkoYoshiManager.swift in Sources */,
 				7537170A2733F218005FFC01 /* AppDelegate.swift in Sources */,
 				7537171E2733F5DA005FFC01 /* CollectionViewCell.swift in Sources */,
 				7537170C2733F218005FFC01 /* SceneDelegate.swift in Sources */,
